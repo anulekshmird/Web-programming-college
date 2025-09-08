@@ -94,30 +94,32 @@
   </header>
 
   <div class="form-container">
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-    
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+    <form action="student_register.php" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required />
+  
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required />
 
-      <label>Department</label>
-      <div class="radio-group">
-        <label><input type="radio" name="department" value="CSE" required> CSE</label>
-        <label><input type="radio" name="department" value="ECE"> ECE</label>
-        <label><input type="radio" name="department" value="EEE"> EEE</label>
-        <label><input type="radio" name="department" value="ME"> ME</label>
-        <label><input type="radio" name="department" value="AI"> AI & DS</label>
-        <label><input type="radio" name="department" value="ECM"> ECM</label>
-      </div>
+  <label for="department">Department</label>
+  <select id="department" name="department" required>
+    <option value="">-- Select Department --</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+    <option value="AI">AI & DS</option>
+    <option value="ECM">ECM</option>
+  </select>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
 
-      <div class="submit-container">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+  <div class="submit-container">
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
   </div>
 
   <footer>
