@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     border-radius: 8px;
                 }
                 h2 {
-                    color: #28a745;
+                    color: #002244;
                     text-align: center;
                 }
                 h3 {
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
                 .btn {
                     display: inline-block;
-                    background: #28a745;
+                    background: #002244;
                     color: #fff;
                     padding: 10px 20px;
                     text-decoration: none;
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     margin-top: 15px;
                 }
                 .btn:hover {
-                    background: #218838;
+                    background: #002244;
                 }
             </style>
         </head>
@@ -87,4 +87,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-
